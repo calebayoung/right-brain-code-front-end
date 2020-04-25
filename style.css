@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 @font-face {
     font-family: "Mont Heavy Demo";
@@ -35,18 +35,61 @@ body {
     background-image: url("images/nordic.jpg");
     background-position: center;
     background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    padding-bottom: 2rem;
 }
 
 .header {
     text-transform: lowercase;
 }
 
+.header__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header__icon {
+    height: 2.75rem;
+}
+
 .header__title {
     font-family: var(--mont);
+    font-size: 1.5rem;
     color: var(--light-gray);
+    margin: 0;
+}
+
+.header__link-container {
+    display: none;
 }
 
 .header__link {
     font-family: var(--rubik);
     color: var(--light-gray);
+}
+
+.hero__quote {
+    max-width: calc(500px - 2rem);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--rubik);
+    color: var(--light-gray);
+    padding: 1rem 2rem;
+    margin: 0 auto;
+}
+
+.hero__quote-text {
+    font-style: italic;
+    line-height: 1.75;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.hero__quote-cite {
+    align-self: flex-end;
+    font-style: normal;
+    margin: 1rem;
 }
