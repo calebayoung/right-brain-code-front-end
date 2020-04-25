@@ -1,7 +1,19 @@
+:root {
+    --light-gray: #e5e9f0;
+    --dark-gray: #2e3440;
+    --blue: #81a1c1;
+    --red: #bf616a;
+    --green: #a3be8c;
+    --yellow: #ebcb8b;
+    --purple: #b48ead;
+    --teal: #88c0d0;
+}
+
 html {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: var(--light-gray);
 }
 
 body {
