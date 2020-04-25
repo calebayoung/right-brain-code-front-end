@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@font-face {
+    font-family: "Mont Heavy Demo";
+    src: url("fonts/mont-heavy-demo/mont-heavy-demo.otf") format("opentype");
+}
+
 :root {
     --light-gray: #e5e9f0;
     --dark-gray: #2e3440;
@@ -7,6 +14,8 @@
     --yellow: #ebcb8b;
     --purple: #b48ead;
     --teal: #88c0d0;
+    --mont: "Mont Heavy Demo", Arial, sans-serif;
+    --rubik: "Rubik", sans-serif;
 }
 
 html {
@@ -24,8 +33,20 @@ body {
 
 .hero {
     background-image: url("images/nordic.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .header {
     text-transform: lowercase;
+}
+
+.header__title {
+    font-family: var(--mont);
+    color: var(--light-gray);
+}
+
+.header__link {
+    font-family: var(--rubik);
+    color: var(--light-gray);
 }
