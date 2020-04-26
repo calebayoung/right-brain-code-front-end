@@ -97,6 +97,7 @@ body {
 
 .header__icon {
     height: 2.75rem;
+    margin-right: 1rem;
 }
 
 .header__title {
@@ -112,7 +113,10 @@ body {
 
 .header__link {
     font-family: var(--rubik);
+    font-size: 0.85rem;
+    font-weight: 300;
     color: var(--ghost-white);
+    margin: 0 1rem;
 }
 
 .hero__quote {
@@ -139,9 +143,11 @@ body {
 }
 
 .homepage__mobile-link-container {
+    width: 100%;
+    max-width: 400px;
     display: flex;
     justify-content: space-around;
-    margin: 0.5rem 0 0.75rem;
+    margin: 0.5rem auto 0.75rem;
 }
 
 .homepage__mobile-link {
@@ -154,9 +160,12 @@ body {
 }
 
 .page-content {
+    width: calc(100% - 4rem);
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
+    margin: 0 auto;
 }
 
 .page-content__heading {
@@ -175,7 +184,9 @@ body {
 }
 
 .home-cards {
-    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 3rem;
 }
 
 .home-card {
@@ -221,6 +232,11 @@ body {
     padding: 2rem;
 }
 
+.footer__logo-container {
+    display: flex;
+    justify-content: center;
+}
+
 .footer__logo {
     height: 2.75rem;
     justify-self: center;
@@ -236,6 +252,7 @@ body {
 .footer__section--contact {
     width: 100%;
     max-width: 10rem;
+    justify-self: center;
     flex-direction: row;
     justify-content: space-around;
     margin: 1.5rem auto 0;
@@ -252,4 +269,49 @@ body {
 .footer__icon {
     height: 2rem;
     margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header__title-container {
+        justify-content: flex-start;
+    }
+
+    .header__link-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 1rem;
+    }
+
+    .homepage__mobile-link-container {
+        display: none;
+    }
+
+    .page-content {
+        width: calc(100% - 8rem);
+        max-width: 800px;
+        padding: 0 4rem;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1rem;
+    }
+
+    .footer__logo-container {
+        grid-column: 1/3;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+
+    .footer__section {
+        margin: 0;
+    }
 }
