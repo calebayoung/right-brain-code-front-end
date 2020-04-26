@@ -32,7 +32,7 @@ html {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--ghost-white-light);
+    background-color: var(--ghost-white-lightest);
 }
 
 body {
@@ -48,6 +48,10 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     padding-bottom: 2rem;
+}
+
+.hero__shadow {
+    filter: drop-shadow(0 7px 7px var(--ghost-white-darkest));
 }
 
 .header {
@@ -153,7 +157,7 @@ body {
     padding: 2rem;
 }
 
-.footer__icon {
+.footer__logo {
     height: 2.75rem;
     justify-self: center;
     margin-top: 1rem;
@@ -165,10 +169,22 @@ body {
     margin-top: 1.5rem;
 }
 
+.footer__section--contact {
+    width: 100%;
+    max-width: 10rem;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1.5rem auto 0;
+}
+
 .footer__text {
     font-family: var(--rubik);
     color: var(--ghost-white);
     text-transform: lowercase;
     text-align: center;
     margin-top: 1rem;
+}
+
+.footer__icon {
+    height: 2rem;
 }
