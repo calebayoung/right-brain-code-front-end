@@ -15,8 +15,8 @@
     --gunmetal-lightest: #cfd6d9;
     --gunmetal-light: #7e858c;
     --gunmetal: #2e3440;
-    --gunmetal-dark: #252a37;
-    --gunmetal-darkest: #1c202e;
+    --gunmetal-dark: #292f3b;
+    --gunmetal-darkest: #252a37;
 
     --blue: #81a1c1;
     --red: #bf616a;
@@ -106,8 +106,7 @@ body {
 
 .homepage__mobile-link-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     margin: 0.5rem 0 0.75rem;
 }
 
@@ -139,4 +138,37 @@ body {
     font-family: var(--rubik);
     color: var(--gunmetal);
     line-height: 1.75;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image:
+        linear-gradient(to bottom, rgba(46, 52, 64, 0.25), rgba(46, 52, 64, 0.25)),
+        url("images/nordic.jpg");
+    background-position: bottom;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    padding: 2rem;
+}
+
+.footer__icon {
+    height: 2.75rem;
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.footer__text {
+    font-family: var(--rubik);
+    color: var(--ghost-white);
+    text-transform: lowercase;
+    text-align: center;
+    margin-top: 1rem;
 }
