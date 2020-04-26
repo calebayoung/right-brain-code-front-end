@@ -18,12 +18,42 @@
     --gunmetal-dark: #292f3b;
     --gunmetal-darkest: #252a37;
 
+    --blue-lightest: #a8c7da;
+    --blue-light: #95b4cd;
     --blue: #81a1c1;
+    --blue-dark: #6782a1;
+    --blue-darkest: #4d6281;
+
+    --red-lightest: #d9959d;
+    --red-light: #cc7b83;
     --red: #bf616a;
+    --red-dark: #a34e55;
+    --red-darkest: #873a40;
+
+    --green-lightest: #c0d8a8;
+    --green-light: #b2cb9a;
     --green: #a3be8c;
+    --green-dark: #829a70;
+    --green-darkest: #627754;
+
+    --yellow-lightest: #f3de9d;
+    --yellow-light: #efd594;
     --yellow: #ebcb8b;
+    --yellow-dark: #c2a26f;
+    --yellow-darkest: #9a7a53;
+
+    --purple-lightest: #d2b6ce;
+    --purple-light: #c3a2bd;
     --purple: #b48ead;
+    --purple-dark: #96728f;
+    --purple-darkest: #775570;
+
+    --teal-lightest: #a5d9e3;
+    --teal-light: #97cdd9;
     --teal: #88c0d0;
+    --teal-dark: #6d9cab;
+    --teal-darkest: #527886;
+
     --mont: "Mont Heavy Demo", Arial, sans-serif;
     --rubik: "Rubik", sans-serif;
 }
@@ -129,7 +159,7 @@ body {
     padding: 0 2rem;
 }
 
-.page-content h2 {
+.page-content__heading {
     align-self: flex-end;
     font-family: var(--mont);
     font-size: 1.75rem;
@@ -142,6 +172,40 @@ body {
     font-family: var(--rubik);
     color: var(--gunmetal);
     line-height: 1.75;
+}
+
+.home-cards {
+    margin-bottom: 3rem;
+}
+
+.home-card {
+    background-color: var(--ghost-white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px var(--ghost-white-darkest);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.home-card__icon {
+    height: 2.5rem;
+}
+
+.home-card__title {
+    font-family: var(--mont);
+    font-size: 1.25rem;
+    color: var(--gunmetal);
+    margin: 1.25rem 0;
+}
+
+.home-card__separator {
+    border: none;
+    border-top: 1px solid var(--gunmetal-light);
+}
+
+.home-card__subtitle {
+    font-family: var(--mont);
+    color: var(--gunmetal);
 }
 
 .footer {
@@ -187,4 +251,5 @@ body {
 
 .footer__icon {
     height: 2rem;
+    margin-top: 1rem;
 }
