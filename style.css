@@ -179,11 +179,12 @@ body {
     font-size: 1.75rem;
     color: var(--ghost-white-dark);
     text-transform: lowercase;
-    margin-bottom: -0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .page-content p {
     font-family: var(--rubik);
+    font-size: 16px;
     color: var(--gunmetal);
     line-height: 1.75;
 }
@@ -191,12 +192,12 @@ body {
 .home-cards {
     width: 100%;
     max-width: 400px;
-    margin: 0 auto 3rem;
+    margin: 1rem auto 3rem;
 }
 
 .home-card {
     background-color: var(--ghost-white);
-    padding: 2rem;
+    padding: 1.5rem 1.5rem 1rem;
     border-radius: 12px;
     box-shadow: 0 5px 10px var(--ghost-white-darkest);
     text-align: center;
@@ -217,11 +218,13 @@ body {
 .home-card__separator {
     border: none;
     border-top: 1px solid var(--gunmetal-light);
+    margin-bottom: 1.5rem;
 }
 
 .home-card__subtitle {
     font-family: var(--mont);
     color: var(--gunmetal);
+    margin: 1.5rem 0 -0.5rem;
 }
 
 .footer {
@@ -248,7 +251,7 @@ body {
 .footer__logo {
     height: 2.75rem;
     justify-self: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .footer__section {
@@ -271,7 +274,7 @@ body {
     color: var(--ghost-white);
     text-transform: lowercase;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .footer__icon {
@@ -315,7 +318,7 @@ body {
 
     .page-content {
         width: calc(100% - 8rem);
-        max-width: 800px;
+        max-width: 640px;
         padding: 0 4rem;
         margin-top: -2rem;
     }
@@ -380,14 +383,14 @@ body {
     }
 
     .hero {
-        background-position: top -6vw left;
+        background-position: top -5vw left;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
     }
 
     .hero__quote {
         max-width: calc(550px - 2rem);
-        padding: 4rem 2rem 7rem;
+        padding: 5rem 2rem 7rem;
     }
 
     .hero__quote-text {
@@ -395,10 +398,10 @@ body {
     }
 
     .home-cards {
-        width: calc(100% + 8rem);
+        width: calc(100% + 16rem);
         grid-column-gap: 3rem;
-        margin-left: -4rem;
-        margin-right: -4rem;
+        margin-left: -8rem;
+        margin-right: -8rem;
     }
 
     .footer {
@@ -406,8 +409,8 @@ body {
         max-width: 1024px;
         grid-template-columns: repeat(4, 1fr);
         grid-row-gap: 2rem;
-        grid-column-gap: 2rem;
-        padding: 1.5rem 4rem 2rem;
+        grid-column-gap: 4rem;
+        padding: 1.5rem 4rem 3rem;
         margin: 0 auto;
     }
 
