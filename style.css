@@ -69,6 +69,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin: 0;
 }
 
 .hero {
@@ -422,8 +423,11 @@ body {
     .footer__logo-container {
         grid-column: 1/5;
         justify-content: flex-end;
-        padding-left: unset;
-        padding-right: 2rem;
+        padding: unset;
+    }
+
+    .footer__section:last-of-type {
+        align-items: flex-end;
     }
 
     .footer__text {
