@@ -89,6 +89,11 @@ body {
     text-transform: lowercase;
 }
 
+.header a {
+    color: var(--ghost-white);
+    text-decoration: none;
+}
+
 .header__title-container {
     display: flex;
     align-items: center;
@@ -118,6 +123,10 @@ body {
     font-weight: 300;
     color: var(--ghost-white);
     margin: 0 1rem;
+}
+
+.header__link a:hover {
+    font-style: italic;
 }
 
 .hero__quote-container {
@@ -172,6 +181,10 @@ body {
     flex-direction: column;
     padding: 0 2rem;
     margin: 0 auto;
+    font-family: var(--rubik);
+    font-size: 16px;
+    color: var(--gunmetal);
+    line-height: 1.75;
 }
 
 .page-content__heading {
@@ -183,11 +196,12 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.page-content p {
-    font-family: var(--rubik);
-    font-size: 16px;
-    color: var(--gunmetal);
-    line-height: 1.75;
+.page-content a {
+    color: var(--blue-dark);
+}
+
+.page-content ul {
+    line-height: 2.5;
 }
 
 .home-cards {
@@ -273,6 +287,7 @@ body {
 .footer__text {
     font-family: var(--rubik);
     color: var(--ghost-white);
+    line-height: 1.5;
     text-transform: lowercase;
     text-align: center;
     margin-top: 1.5rem;
