@@ -1,0 +1,88 @@
+body {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column-gap: 4rem;
+}
+
+.resume__title {
+	font-family: var(--mont);
+	font-size: 42px;
+	color: var(--gunmetal);
+	margin: 0;
+}
+
+.resume__subtitle {
+	margin-bottom: 24px !important;
+}
+
+.resume__header {
+	font-family: var(--mont);
+	font-size: 16px;
+	color: var(--blue);
+	line-height: 1.5;
+	text-transform: uppercase;
+	margin: 0 0 -1rem;
+}
+
+.resume__subheader {
+	font-family: var(--rubik);
+	font-size: 14px;
+	color: var(--gunmetal);
+	line-height: 2;
+	margin: 0;
+}
+
+.resume__location {
+	font-weight: 400;
+}
+
+.resume__job-entry {
+	margin: 1.7rem 0;
+}
+
+.resume p {
+	font-family: var(--rubik);
+	font-size: 13px;
+	color: var(--gunmetal);
+	line-height: 1.5;
+	margin: 0;
+}
+
+.resume__right-entry {
+	margin-bottom: 2rem;
+}
+
+.resume__right-entry p {
+	margin: 1.25rem 0;
+}
+
+.resume__right-column .resume__header {
+	margin-bottom: 0;
+}
+
+.resume a {
+	color: var(--blue-dark);
+}
+
+.resume__blue-text {
+	color: var(--blue-dark);
+}
+
+.resume__date {
+	font-size: 11px !important;
+	color: var(--gunmetal-light) !important;
+	margin-bottom: 0.25rem !important;
+}
+
+.resume__contact {
+	font-weight: bold;
+	color: var(--blue-dark) !important;
+}
+
+.resume__contact:nth-of-type(2) {
+	margin-bottom: 14px !important;
+}
+
+.resume__web-link {
+	margin-bottom: 24px !important;
+}
