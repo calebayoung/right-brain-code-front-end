@@ -2,6 +2,7 @@ body {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-column-gap: 4rem;
+	margin: 3rem 3rem 0;
 }
 
 .resume__title {
